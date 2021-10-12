@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Веб-разработка</title>
 </head>
 <body>
@@ -33,16 +35,17 @@
 
 	<div class="about">
 		<h2>ОБО МНЕ</h2>
-		<img src="img/zagolovok.png" alt="Изображение черты">
-		<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Sit modi dolorum mollitia voluptatibus exercitationem. Ratione necessitatibus placeat dolorum adipisci expedita natus ipsa ea recusandae ullam.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui modi ratione facere pariatur labore eaque hic? Minima aut, provident dolor, aperiam nulla alias rem ad!</p>
+		<img id="chert" src="img/zagolovok.png" alt="Изображение черты">
+		<img id="photo" src="img/photoMan.png" alt="Фотография мужчины">
+		<p id="p1About">Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Voluptatem voluptatibus error deleniti recusandae, ab necessitatibus nisi aliquid soluta eum atque doloribus quisquam, repellendus hic sunt praesentium nostrum commodi illo. Aliquid at quisquam doloribus consequuntur suscipit repudiandae aspernatur officiis veritatis iste reiciendis, maxime sint deleniti dolores ab quasi enim repellendus nulla!.</p>
+		<p id="p2About">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui modi ratione facere pariatur labore eaque hic? Minima aut, provident dolor, aperiam nulla alias rem ad!</p>
 		<input type="submit" value="Скачать резюме">
 	</div>
 
 	<div class="skills">
 		<h2>ЧТО Я УМЕЮ</h2>
-		<img src="img/zagolovok.png" alt="Изображение черты">
-
+		<img id="chert" src="img/zagolovok.png" alt="Изображение черты">
+		<div class="items">
 		<div class="item1">
 			<img src="img/computer.png" alt="Изображение компьютера">
 			<h4>Веб-дизайн</h4>
@@ -66,19 +69,27 @@
 			<h4>Маркетинг</h4>
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda.</p>
 		</div>	
+		</div>
 	</div>
 
 	<div class="cases">
 		<h2>КЕЙСЫ</h2>
-		<img src="img/zagolovok.png" alt="Изображеение черты">
+		<img id="chert" src="img/zagolovok.png" alt="Изображеение черты">
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad velit minus obcaecati ratione aperiam temporibus.</p>
-		<img src="" alt="Изображениие кейса">
-		<h3>CLIENT:</h3>
-		<p>Какая-то компания</p>
-		<h3>Название проекта</h3>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel, eos nobis quisquam debitis nesciunt qui tempora accusantium voluptas alias laudantium accusamus ducimus, quos deserunt reprehenderit voluptates deleniti, eum voluptatibus eius quas facere possimus laboriosam consequuntur similique, velit! Corporis numquam mollitia cupiditate magnam eveniet repudiandae.</p>
-		<h3>WEBSITE:</h3>
-		<a href="http:/www.somedomain.com">http:/www.somedomain.com</a>
+		<img src="img/case.png" alt="Изображениие кейса">
+		<div class="casescl">
+		<div class="client">
+			<h3>CLIENT:</h3>
+			<p>Какая-то компания</p>
+			<h3>WEBSITE:</h3>
+			<a href="http:/www.somedomain.com">http:/www.somedomain.com</a>
+		</div>
+		<div class="project">
+			<h3>Название проекта</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel, eos nobis quisquam debitis nesciunt qui tempora accusantium voluptas alias laudantium accusamus ducimus, quos deserunt reprehenderit voluptates deleniti, eum voluptatibus eius quas facere possimus laboriosam consequuntur similique, velit! Corporis numquam mollitia cupiditate magnam eveniet repudiandae.</p>
+		</div>
+		</div>
+		
 		<input type="submit" value="VISIT LIVE SITE">
 	</div>
 
@@ -100,52 +111,63 @@
 		</select>
 
 		<img src="img/itog.png" alt="Линия итога">
-		<p><strong>Сроки</strong></p>
-		<p><strong>0</strong></p>
-		<p><strong>Стоимость</strong></p>
-		<p><strong>0</strong></p>
+		<div class="itog">
+			<div class="time">
+				<p>Сроки</p>
+				<p>Стоимость</p>
+			</div>
+		
+			<div class="priceKonch">
+				<p>0</p>
+				<p>0</p>
+			</div>
+		</div>
+
+
 	</div>
 
 	<div class="statistics">
 		<h2>НЕМНОГО СТАТИСТИКИ</h2>
-		<img src="img/zagolovok.png" alt="Изображение черты">
+		<img id="chert" src="img/zagolovok.png" alt="Изображение черты">
+		<div class="allstat">
+			<div class="clients">
+				<img src="img/smail.png" alt="Изображение смайла">
+				<p class="chsil">120</p>
+				<p class="tex">СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+			</div>
 
-		<div class="clients">
-			<img src="img/smail.png" alt="Изображение смайла">
-			<p><strong>120</strong></p>
-			<p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
-		</div>
+			<div class="hours">
+				<img src="img/skobki.png" alt="Изображение скобок">
+				<p class="chsil">4,600</p>
+				<p class="tex">ЧАСОВ РАБОТЫ</p>
+			</div>
 
-		<div class="hours">
-			<img src="img/skobki.png" alt="Изображение скобок">
-			<p><strong>4,600</strong></p>
-			<p>ЧАСОВ РАБОТЫ</p>
-		</div>
+			<div class="end_projects">
+				<img src="img/galochka.png" alt="Изображение галочки">
+				<p class="chsil">340</p>
+				<p class="tex">ПРОЕКТОВ ЗАВЕРШЕНО</p>
+			</div>
 
-		<div class="end_projects">
-			<img src="img/galochka.png" alt="Изображение галочки">
-			<p><strong>340</strong></p>
-			<p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+			<div class="reward">
+				<img src="img/cup.png" alt="Изображение кубка">
+				<p class="chsil">23</p>
+				<p class="tex">НАГРАД ПОЛУЧЕНО</p>
+			</div>
 		</div>
-
-		<div class="reward">
-			<img src="img/cup.png" alt="Изображение кубка">
-			<p><strong>23</strong></p>
-			<p>НАГРАД ПОЛУЧЕНО</p>
-		</div>
+		
 	</div>
 
 	<div class="feedback">
 		<h2>ОТЗЫВЫ</h2>
-		<img src="img/zagolovok.png" alt="Изображение черты">
-		<img src="img/photo.png" alt="Изображение фотографии">
+		<img id="chert" src="img/zagolovok.png" alt="Изображение черты">
+		<img id="photo" src="img/photo.png" alt="Изображение фотографии">
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum, odio optio explicabo ab? Natus provident nihil dolores ex tempora.</p>
-		<p><strong>Михаил</strong>,Ген директор ПАО "Газпром"</p>
+		<p><span>Михаил</span>,Ген директор ПАО "Газпром"</p>
 	</div>
 
 	<div class="contacts">
 		<h2>МОИ КОНТАКТЫ</h2>
-		<img src="img/zagolovok.png" alt="Изображение черты">
+		<img id="chert" src="img/zagolovok.png" alt="Изображение черты">
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, reiciendis!</p>
 
 		<div class="geo">
@@ -164,22 +186,17 @@
 		</div>
 
 		<h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
-		<input type="text" placeholder="Имя">
-		<input type="email" placeholder="Email">
+		<input id="input1" type="text" placeholder="Имя">
+		<input id="input2" type="email" placeholder="Email">
 		<textarea name="mail" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-		<input type="submit" value="Отправить">
+		<input id="input3" type="submit" value="Отправить">
 
-		<a href=""><img src="img/facebook.png" alt="Фэйсбук"></a>
-		<a href=""><img src="img/twitter.png" alt="Твитер"></a>
-		<a href=""><img src="img/ball.png" alt="Мяч"></a>
-		<a href=""><img src="img/git.png" alt="git"></a>
-		<a href=""><img src="img/insta.png" alt="Инстаграм"></a>
-		<a href=""><img src="img/in.png" alt="in"></a>
+		
 
 	</div>
 
 	<footer>
-		<p>Copyright 2021 Андрей Браун. Design by Web</p>
+		<p>Copyright 2021 Роман Лариков. Design by Web</p>
 	</footer>
 	
 </body>
