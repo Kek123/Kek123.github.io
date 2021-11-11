@@ -24,38 +24,42 @@
 	</div>
 	-->
 
-	<header>
+
+	<header id="top">
 		<nav>
 			<div class="container">
 				<div class="row">
 					<div class="col-xxl-2 col-lg-3 col-7">
-						<div class="logo">Роман Лариков</div>
+						<div id="hi" class="logo"> Роман Лариков</div>
 					</div>
-					<div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+					<div class="px-0  col-xxl-8 col-xl-9  offset-xxl-2   d-none d-xl-block">
 						<div class="menu">
 							<ul>
-								<li><a href="#">Обо мне</a></li>
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Кейсы</a></li>
-								<li><a href="#">Прайс</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Контакты</a></li>	
+								<li><a class="active non_active" href="#main">Главная</a></li>
+								<li><a class="non_active" href="#infAbout">Обо мне</a></li>
+								<li><a class="non_active" href="#skil">Услуги</a></li>
+								<li><a class="non_active" href="#proj">Кейсы</a></li>
+								<li><a class="non_active" href="#price">Прайс</a></li>
+								<li><a class="non_active" href="#stat">Статистика</a></li>
+								<li><a class="non_active" href="#fb">Отзывы</a></li>
+								<li><a class="non_active" href="#contact">Контакты</a></li>	
 						    </ul>
 		    			</div>
 					</div>
-					<div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+					<div class="col-5 col-lg-9 d-flex d-xl-none flex-column justify-content-center align-items-end">
 						<div class="dropdown">
 						  	<a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
 						    Навигация
 						  	</a>
 
 						  	<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						  		<li><a class="dropdown-item" href="#">Обо мне</a></li>
-								<li><a class="dropdown-item" href="#">Услуги</a></li>
-								<li><a class="dropdown-item" href="#">Кейсы</a></li>
-								<li><a class="dropdown-item" href="#">Прайс</a></li>
-								<li><a class="dropdown-item" href="#">Отзывы</a></li>
-								<li><a class="dropdown-item" href="#">Контакты</a></li>	
+						  		<li><a class="dropdown-item" href="#infAbout">Обо мне</a></li>
+								<li><a class="dropdown-item" href="#skil">Услуги</a></li>
+								<li><a class="dropdown-item" href="#proj">Кейсы</a></li>
+								<li><a class="dropdown-item" href="#price">Прайс</a></li>
+								<li><a class="dropdown-item" href="#stat">Статистика</a></li>
+								<li><a class="dropdown-item" href="#fb">Отзывы</a></li>
+								<li><a class="dropdown-item" href="#contact">Контакты</a></li>	
  							</ul>
 						</div>
 						
@@ -65,11 +69,34 @@
 		</nav>
 	</header>
 
-	<main>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+	  Launch demo modal
+	</button>
+
+	<!-- Modal -->
+	<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" >
+	    <div class="modal-content" >
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+	        <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button  type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<main class="section" id="main">
 		<section class="main">
 			<div class="container h-100">
 				<div class="row align-items-center h-100">
-					<div class="col-lg-6 mt-5 pt-5">
+					<div class="col-xl-6 mt-5 pt-5">
 						<div class="title_container mt-5 w-100">
 							<h1>Привет <br> Я Роман Лариков</h1>
 							<h4><i class="icon-timer-custom" aria-hidden="true"></i>Фулл стек веб-разработчик</h4>
@@ -83,7 +110,7 @@
 		</section>
 	</main>
 
-	<div class="about">
+	<div class="about section" id="infAbout">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-5 col-md-3 col-sm-4 col-lg-2 text-center">
@@ -114,7 +141,7 @@
 	</div>
 
 
-	<div class="skills">
+	<div class="skills section" id="skil">
 		<div class="container ">
 			<div class="row justify-content-center pb-sm-5 mb-sm-5 pb-4 mb-4 pt-3">
 				<div class="col-6 col-md-4 col-sm-5 col-lg-3 col-xl-3 text-center mt-sm-5 pt-sm-5 mt-3 pt-3">
@@ -159,7 +186,7 @@
 		</div>
 	</div>
 
-	<div class="cases mb-5 pb-5 mt-5">
+	<div class="cases section mb-5 pb-5 mt-5" id="proj">
 		<div class="container">
 			<div class="row justify-content-center pb-sm-5 mb-sm-5 pb-4 mb-4 pt-3">
 				<div class="col-6 col-md-4 col-sm-5 col-lg-3 col-xl-3 text-center mt-sm-5 pt-sm-5 mt-3 pt-3">
@@ -174,6 +201,119 @@
 				</div>
 			</div>
 
+			<div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+			  <div class="carousel-indicators row justify-content-center mb-3 m-0 text-center col-12">
+			    <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+			    <button type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			  </div>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active col-12 text-center">
+				     <div class="row justify-content-center mb-3">
+						<div class="col-12 text-center ">
+							<img id="casePhoto" src="img/case.png" alt="Изображениие кейса">
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-lg-2 col-12 mb-3">
+							<div class="client">
+								<h3>CLIENT:</h3>
+								<p>Какая-то компания</p>
+								<h3>WEBSITE:</h3>
+								<a href="http:/www.somedomain.com">http:/www.somedomain.com</a>
+							</div>
+						</div>
+
+						<div class="col-lg-8 col-12 offset-lg-1">
+							<div class="project">
+								<h3>Название проекта</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel, eos nobis quisquam debitis nesciunt qui tempora accusantium voluptas alias laudantium accusamus ducimus, quos deserunt reprehenderit voluptates deleniti, eum voluptatibus eius quas facere possimus laboriosam consequuntur similique, velit! Corporis numquam mollitia cupiditate magnam eveniet repudiandae.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row justify-content-start px-lg-5">
+						<div class="col-2 gx-lg-4">
+							<input id="visit" type="button" value="VISIT LIVE SITE">
+						</div>
+					</div>
+			    </div>
+
+			    <div class="carousel-item  col-12 text-center">
+			     	<div class="row justify-content-center mb-3">
+						<div class="col-12 text-center ">
+							<img id="casePhoto" src="img/case.png" alt="Изображениие кейса">
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-lg-2 col-12 mb-3">
+							<div class="client">
+								<h3>CLIENT:</h3>
+								<p>Какая-то компания</p>
+								<h3>WEBSITE:</h3>
+								<a href="http:/www.somedomain.com">http:/www.somedomain.com</a>
+							</div>
+						</div>
+
+						<div class="col-lg-8 col-12 offset-lg-1">
+							<div class="project">
+								<h3>Название проекта</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel, eos nobis quisquam debitis nesciunt qui tempora accusantium voluptas alias laudantium accusamus ducimus, quos deserunt reprehenderit voluptates deleniti, eum voluptatibus eius quas facere possimus laboriosam consequuntur similique, velit! Corporis numquam mollitia cupiditate magnam eveniet repudiandae.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row justify-content-start px-lg-5">
+						<div class="col-2 gx-lg-4">
+							<input id="visit" type="button" value="VISIT LIVE SITE">
+						</div>
+					</div>
+			    </div>
+			    <div class="carousel-item col-12 text-center">
+			      	<div class="row justify-content-center mb-3">
+						<div class="col-12 text-center ">
+							<img id="casePhoto" src="img/case.png" alt="Изображениие кейса">
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-lg-2 col-12 mb-3">
+							<div class="client">
+								<h3>CLIENT:</h3>
+								<p>Какая-то компания</p>
+								<h3>WEBSITE:</h3>
+								<a href="http:/www.somedomain.com">http:/www.somedomain.com</a>
+							</div>
+						</div>
+
+						<div class="col-lg-8 col-12 offset-lg-1">
+							<div class="project">
+								<h3>Название проекта</h3>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel, eos nobis quisquam debitis nesciunt qui tempora accusantium voluptas alias laudantium accusamus ducimus, quos deserunt reprehenderit voluptates deleniti, eum voluptatibus eius quas facere possimus laboriosam consequuntur similique, velit! Corporis numquam mollitia cupiditate magnam eveniet repudiandae.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row justify-content-start px-lg-5">
+						<div class="col-2 gx-lg-4">
+							<input id="visit" type="button" value="VISIT LIVE SITE">
+						</div>
+					</div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev text-center col-12" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next text-center col-12" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+
+			<!--
 			<div class="row justify-content-center mb-3">
 				<div class="col-12 text-center ">
 					<img id="casePhoto" src="img/case.png" alt="Изображениие кейса">
@@ -203,10 +343,11 @@
 					<input id="visit" type="button" value="VISIT LIVE SITE">
 				</div>
 			</div>
+		-->
 		</div>
 	</div>
 
-	<div class="price mt-5 ">
+	<div class="price section mt-5 pt-5" id="price">
 		<div class="container boxing">
 			<div class="row justify-content-center mb-5 pb-3 mt-5 pt-5">
 				<div class="col-xxl-4 col-xl-5 text-center">
@@ -224,6 +365,11 @@
 				<div class="col-10 text-center">
 					<select class="" name="type" id="type_site" >
 						<option value="start_opt" selected disabled>Выберите пункт...</option>
+						<option value="val1">Сайт-визитка</option>
+						<option value="val2">Лэндинг</option>
+						<option value="val3">Интернет-магазин</option>
+						<option value="val4">Корпоративный сайт</option>
+						<option value="val6">Игровой портал</option>
 					</select>
 				</div>
 			</div>
@@ -238,6 +384,9 @@
 				<div class="col-10 text-center">
 					<select name="design" id="type_design" >
 						<option value="start_opt" selected disabled>Выберите пункт...</option>
+						<option value="val1">Динамический дизайн</option>
+						<option value="val2">Обычный дизайн</option>
+						<option value="val3">Уникальный дизайн</option>
 					</select>
 				</div>
 			</div>
@@ -252,11 +401,11 @@
 				<div class="col-10 text-center">
 					<select name="adapt" id="type_adapt" >
 						<option value="start_opt" selected disabled>Выберите пункт...</option>
+						<option value="val2">Адаптивный</option>
+						<option value="val3">Неадаптивный</option>
 					</select>
 				</div>
 			</div>
-
-			
 
 			<div class="row justify-content-center">
 				<div class="col-10 text-center">
@@ -270,7 +419,7 @@
 				</div>
 
 				<div class="col-1">
-					<p>0</p>
+					<p id="time">0</p>
 				</div>
 			</div>
 
@@ -280,17 +429,15 @@
 				</div>
 
 				<div class="col-1">
-					<p>0</p>
+					<p id="money">0</p>
 				</div>
 			</div>
 		</div>
-
-
 	</div>
 
-	<div class="statistics">
+	<div class="statistics section" id="stat">
 		<div class="container">
-			<div class="row row justify-content-center pb-sm-5 mb-sm-5 pb-4 mb-4 pt-5 mt-2">
+			<div class="row row justify-content-center pb-sm-5 mb-sm-5  pt-5 mt-2">
 				<div class="col-9 col-md-6 col-sm-7 col-lg-5 col-xxl-4 text-center mt-sm-5 pt-sm-5 mt-3 pt-3">
 					<h2>НЕМНОГО СТАТИСТИКИ</h2>
 					<img id="chert" src="img/zagolovok.png" alt="Изображение черты">
@@ -298,7 +445,7 @@
 			</div>
 		
 		
-			<div class="row justify-content-center mb-5 pb-5 mt-3">
+			<div class="row justify-content-center pb-5 mt-3">
 				<div class="col-12 col-md-3 col-sm-6 mt-md-5 pt-md-5 mb-5 text-center ">
 					<div class="clients">
 						<img src="img/smail.png" alt="Изображение смайла">
@@ -310,7 +457,7 @@
 				<div class="col-12 col-md-3 col-sm-6 mt-md-5 pt-md-5 mb-5 text-center">
 					<div class="hours">
 						<img src="img/skobki.png" alt="Изображение скобок">
-						<p class="chsil">4,600</p>
+						<p class="chsil">4600</p>
 						<p class="tex">ЧАСОВ РАБОТЫ</p>
 					</div>
 				</div>
@@ -334,16 +481,71 @@
 		</div>
 	</div>
 
-	<div class="feedback">
+	<div class="feedback section" id="fb">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center mb-5">
 				<div class="col-lg-2 col-md-3 col-sm-4 col-5 text-center">
 					<h2 class="mb-3">ОТЗЫВЫ</h2>
 					<img class="mb-5 pb-3" id="chert" src="img/zagolovok.png" alt="Изображение черты">
 				</div>
 			</div>
 
-			<div class="row justify-content-center mb-5 pb-5">
+			<div id="carouselExampleFade" class="carousel slide carousel-fade row justify-content-center mb-5 pb-5" data-bs-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active col-xl-2 col-sm-3 col-4 text-center">
+			      	<div class="row justify-content-center mb-5 pb-5">
+						<div class="col-xl-2 col-sm-3 col-4 text-center">
+							<img class="" id="photo" src="img/photo.png" alt="Изображение фотографии">
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-xl-8 col-9 text-center feedbackText">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum, odio optio explicabo ab? Natus provident nihil dolores ex tempora.</p>
+							<p><span>Михаил</span>,Ген директор ПАО "Газпром"</p>
+						</div>
+					</div>
+			    </div>
+			    <div class="carousel-item col-xl-2 col-sm-3 col-4 text-center">
+			     	<div class="row justify-content-center mb-5 pb-5">
+						<div class="col-xl-2 col-sm-3 col-4 text-center">
+							<img class="" id="photo" src="img/photo.png" alt="Изображение фотографии">
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-xl-8 col-9 text-center feedbackText">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum, odio optio explicabo ab? Natus provident nihil dolores ex tempora.</p>
+							<p><span>Владимир</span>,Ген директор ООО "Сайт"</p>
+						</div>
+					</div>
+			    </div>
+			    <div class="carousel-item col-xl-2 col-sm-3 col-4 text-center">
+			      	<div class="row justify-content-center mb-5 pb-5">
+						<div class="col-xl-2 col-sm-3 col-4 text-center">
+							<img class="" id="photo" src="img/photo.png" alt="Изображение фотографии">
+						</div>
+					</div>
+
+					<div class="row justify-content-center">
+						<div class="col-xl-8 col-9 text-center feedbackText">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit harum, odio optio explicabo ab? Natus provident nihil dolores ex tempora.</p>
+							<p><span>Николай</span>,Ген директор игрового портала Game Free</p>
+						</div>
+					</div>
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+
+			<!--<div class="row justify-content-center mb-5 pb-5">
 				<div class="col-xl-2 col-sm-3 col-4 text-center">
 					<img class="" id="photo" src="img/photo.png" alt="Изображение фотографии">
 				</div>
@@ -355,10 +557,11 @@
 					<p><span>Михаил</span>,Ген директор ПАО "Газпром"</p>
 				</div>
 			</div>
+			-->
 		</div>
 	</div>
 
-	<div class="contacts">
+	<div class="contacts section" id="contact">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-xl-3 text-center">
@@ -429,6 +632,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/myScript.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 </body>

@@ -146,6 +146,12 @@ nav{
 	float: left;
 }
 
+.modal{
+	background-color: #000;
+	opacity: 1;
+}
+
+
 .menu li{
 	float: left;
 	line-height: 60px;
@@ -214,7 +220,7 @@ nav{
 	transform: scale(1);
 }
 
-@media(max-width: 992px){
+@media(max-width: 1200px){
 	.title_container, .title_container h4, .title_container input{
 		color: white;
 		position: relative;
@@ -241,21 +247,38 @@ nav{
 	}
 }
 
-.menu li a{
+.non_active{
 	transition: all 0.4s;
 	color: #fff;
 	transform: scale(1);
 	display: inline-block;
 }
 
-.menu li a:visited{
+
+
+.non_active:visited{
 	color:#fff;
 }
 
-.menu li a:hover{
+.non_active:hover{
 	color:#e88604;
 	transform: scale(1.1);
 }
+
+.active{
+	color:#e88604;
+}
+
+.active:visited{
+	color:#e88604;
+}
+
+.active:hover{
+	color:#e88604;
+	transform: scale(1.1);
+}
+
+
 
 main{
 	width: 100%;
@@ -315,6 +338,14 @@ main{
 
 .menu li:nth-child(6){
 	animation-delay: 6.8s;
+}
+
+.menu li:nth-child(7){
+	animation-delay: 7s;
+}
+
+.menu li:nth-child(8){
+	animation-delay: 7.2s;
 }
 
 @keyframes titlemove{
@@ -543,6 +574,19 @@ main{
 }
 
 
+.carousel-control-prev-icon{
+	background-color: black;
+	opacity: 0.5;
+}
+
+.carousel-control-next-icon{
+	background-color: black;
+	opacity: 0.5;
+}
+
+.carousel-indicators{
+	margin-left: 0;
+}
 
 .project h3{
 	font-weight: bold;
@@ -610,6 +654,7 @@ main{
 
 .boxing{
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	padding-bottom: 50px;
 }
 
 
@@ -760,6 +805,14 @@ main{
 	float: none;
 }
 
+#carouselExampleFade{
+	margin: 0;
+}
+
+.feedbackText{
+	color: black;
+}
+
 .feedback #chert{
 	width: 65px;
 }
@@ -777,6 +830,16 @@ main{
 
 .feedback span{
 	font-weight: bold;
+}
+
+.client{
+	color: black;
+	text-align: justify;
+}
+
+.project{
+	color: black;
+	text-align: justify;
 }
 
 .contacts{
